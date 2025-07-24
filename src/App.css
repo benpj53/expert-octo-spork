@@ -28,6 +28,25 @@
   color: #61dafb;
 }
 
+.growing-box {
+  position: absolute;
+  animation: growFade 1s infinite;
+  transform-origin: center;
+  opacity: 1;
+}
+
+/* Animation: grow and fade */
+@keyframes growFade {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) scale(1.5);
+    opacity: 0;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
