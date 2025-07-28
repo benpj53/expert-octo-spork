@@ -5,8 +5,8 @@ const DiceNewTicketView = () => {
   const [currentTime, setCurrentTime] = useState(getFormattedTime());
 
   const boxX = 118; // X position in px
-  const boxY = 290; // Y position in px
-  const boxSize = 158; // Initial width and height in px)
+  const boxY = 278; // Y position in px
+  const boxSize = 175; // Initial width and height in px)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -28,7 +28,7 @@ const DiceNewTicketView = () => {
         alt="Growing Box"
         className='growing-box'
         style={{
-          top: window.outerWidth * (538/728), 
+          top: window.outerWidth * (520/728), 
           left: '50%',
           width: boxSize,
           height: boxSize,
